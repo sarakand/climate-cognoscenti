@@ -47,7 +47,7 @@ export default function Form() {
     <form class="px-8 pb-8 bg-bgPurple">
       <Panel>
         {questions.map(({ options, label }) => (
-          <div className="w-full">
+          <div className="w-full" key={label}>
             <div className="w-full max-w-md py-3">
               <RadioGroup /* value={selected} onChange={setSelected} */>
                 <RadioGroup.Label>{label}</RadioGroup.Label>

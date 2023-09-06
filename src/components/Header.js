@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Form() {
   return (
     <header class="bg-deepPurple">
@@ -8,10 +10,12 @@ export default function Form() {
         <div class="flex lg:flex-1">
           <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">NatWest</span>
-            <img
-              class="h-14 w-24 ml-8"
+            <Image
+              class="ml-8"
               src="/images/header-logo-natwest.svg"
               alt="NatWest"
+              width="110"
+              height="56"
             />
           </a>
         </div>
